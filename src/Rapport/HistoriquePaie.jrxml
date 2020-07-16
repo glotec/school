@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="HistoriquePaie" language="groovy" pageWidth="792" pageHeight="612" orientation="Landscape" columnWidth="752" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="d1ea6d0e-2f38-4303-8234-4e14491b15e9">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<queryString>
+		<![CDATA[SELECT e.idel, e.nomel, e.postnomel, e.prenomel, dp.iddetail, dp.montant, dp.datepaie, dp.typepaie FROM  eleve e 
+INNER JOIN inscrire i ON e.idel = i.eleve INNER JOIN detail d ON i.idinsc = d.inscrit INNER JOIN paiement p 
+ON d.iddet = p.detail INNER JOIN detailpaiement dp ON p.idpaie = dp.paiement;]]>
+	</queryString>
+	<field name="idel" class="java.lang.String"/>
+	<field name="nomel" class="java.lang.String"/>
+	<field name="postnomel" class="java.lang.String"/>
+	<field name="prenomel" class="java.lang.String"/>
+	<field name="iddetail" class="java.lang.String"/>
+	<field name="montant" class="java.lang.Integer"/>
+	<field name="datepaie" class="java.lang.String"/>
+	<field name="typepaie" class="java.lang.String"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="15" splitType="Stretch"/>
+	</title>
+	<pageHeader>
+		<band height="35" splitType="Stretch">
+			<staticText>
+				<reportElement x="224" y="0" width="225" height="20" uuid="28b327a3-f43f-4ee9-9798-b7b58c4966ee"/>
+				<text><![CDATA[HISTORIQUE DE PAYEMENT DES ELVES]]></text>
+			</staticText>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band height="22" splitType="Stretch">
+			<staticText>
+				<reportElement x="14" y="0" width="72" height="20" uuid="6931fc77-ea6f-4e98-b965-77204d2dee86"/>
+				<box>
+					<pen lineWidth="0.5"/>
+					<topPen lineWidth="0.5"/>
+					<leftPen lineWidth="0.5"/>
+					<bottomPen lineWidth="0.5"/>
+					<rightPen lineWidth="0.5"/>
+				</box>
+				<text><![CDATA[ID]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="86" y="0" width="100" height="20" uuid="f3fa2da5-30a1-4d2c-9dd0-8e5323bb452b"/>
+				<box>
+					<pen lineWidth="0.5"/>
+					<topPen lineWidth="0.5"/>
+					<leftPen lineWidth="0.5"/>
+					<bottomPen lineWidth="0.5"/>
+					<rightPen lineWidth="0.5"/>
+				</box>
+				<text><![CDATA[NOM]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="186" y="0" width="100" height="20" uuid="b58f74b4-6851-4552-a465-73d6531d2e0e"/>
+				<box>
+					<pen lineWidth="0.5"/>
+					<topPen lineWidth="0.5"/>
+					<leftPen lineWidth="0.5"/>
+					<bottomPen lineWidth="0.5"/>
+					<rightPen lineWidth="0.5"/>
+				</box>
+				<text><![CDATA[POST NOM]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="286" y="0" width="100" height="20" uuid="82baf516-0fd0-472c-87f2-b23b0a966966"/>
+				<box>
+					<pen lineWidth="0.5"/>
+					<topPen lineWidth="0.5"/>
+					<leftPen lineWidth="0.5"/>
+					<bottomPen lineWidth="0.5"/>
+					<rightPen lineWidth="0.5"/>
+				</box>
+				<text><![CDATA[PRENOM]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="386" y="0" width="81" height="20" uuid="57fb0b97-3d40-420f-b0f0-214a4da5d280"/>
+				<box>
+					<pen lineWidth="0.5"/>
+					<topPen lineWidth="0.5"/>
+					<leftPen lineWidth="0.5"/>
+					<bottomPen lineWidth="0.5"/>
+					<rightPen lineWidth="0.5"/>
+				</box>
+				<text><![CDATA[ID PAYEMENT]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="467" y="0" width="71" height="20" uuid="e8fce90c-1243-4842-b549-b5cfaf06a040"/>
+				<box>
+					<pen lineWidth="0.5"/>
+					<topPen lineWidth="0.5"/>
+					<leftPen lineWidth="0.5"/>
+					<bottomPen lineWidth="0.5"/>
+					<rightPen lineWidth="0.5"/>
+				</box>
+				<text><![CDATA[MONTANT]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="538" y="0" width="100" height="20" uuid="14e661d5-d64d-423c-8547-a239b1eab21d"/>
+				<box>
+					<pen lineWidth="0.5"/>
+					<topPen lineWidth="0.5"/>
+					<leftPen lineWidth="0.5"/>
+					<bottomPen lineWidth="0.5"/>
+					<rightPen lineWidth="0.5"/>
+				</box>
+				<text><![CDATA[DATE]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="638" y="0" width="100" height="20" uuid="29a18110-dcca-48b5-8e4a-8e6c91e93104"/>
+				<box>
+					<pen lineWidth="0.5"/>
+					<topPen lineWidth="0.5"/>
+					<leftPen lineWidth="0.5"/>
+					<bottomPen lineWidth="0.5"/>
+					<rightPen lineWidth="0.5"/>
+				</box>
+				<text><![CDATA[TYPE PAYEMENT]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="20" splitType="Stretch">
+			<textField>
+				<reportElement x="14" y="0" width="72" height="20" uuid="2f207b4c-4117-4135-b114-acd3cc6edbd5"/>
+				<box>
+					<pen lineWidth="0.5"/>
+					<topPen lineWidth="0.5"/>
+					<leftPen lineWidth="0.5"/>
+					<bottomPen lineWidth="0.5"/>
+					<rightPen lineWidth="0.5"/>
+				</box>
+				<textFieldExpression><![CDATA[$F{idel}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="86" y="0" width="100" height="20" uuid="dc8f819d-e7cb-40df-a4ff-b1250ba0c65b"/>
+				<box>
+					<pen lineWidth="0.5"/>
+					<topPen lineWidth="0.5"/>
+					<leftPen lineWidth="0.5"/>
+					<bottomPen lineWidth="0.5"/>
+					<rightPen lineWidth="0.5"/>
+				</box>
+				<textFieldExpression><![CDATA[$F{nomel}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="186" y="0" width="100" height="20" uuid="16403cad-7820-48e1-90c1-7b1a1912ad8e"/>
+				<box>
+					<pen lineWidth="0.5"/>
+					<topPen lineWidth="0.5"/>
+					<leftPen lineWidth="0.5"/>
+					<bottomPen lineWidth="0.5"/>
+					<rightPen lineWidth="0.5"/>
+				</box>
+				<textFieldExpression><![CDATA[$F{postnomel}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="286" y="0" width="100" height="20" uuid="d4376f7c-0299-495d-a83f-dfb0e95d49e1"/>
+				<box>
+					<pen lineWidth="0.5"/>
+					<topPen lineWidth="0.5"/>
+					<leftPen lineWidth="0.5"/>
+					<bottomPen lineWidth="0.5"/>
+					<rightPen lineWidth="0.5"/>
+				</box>
+				<textFieldExpression><![CDATA[$F{prenomel}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="386" y="0" width="81" height="20" uuid="8ac7d6c2-adb2-4ebc-ac10-e2281eb77d35"/>
+				<box>
+					<pen lineWidth="0.5"/>
+					<topPen lineWidth="0.5"/>
+					<leftPen lineWidth="0.5"/>
+					<bottomPen lineWidth="0.5"/>
+					<rightPen lineWidth="0.5"/>
+				</box>
+				<textFieldExpression><![CDATA[$F{iddetail}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="467" y="0" width="71" height="20" uuid="32587713-1460-4a28-b18c-0a352e8cf0c8"/>
+				<box>
+					<pen lineWidth="0.5"/>
+					<topPen lineWidth="0.5"/>
+					<leftPen lineWidth="0.5"/>
+					<bottomPen lineWidth="0.5"/>
+					<rightPen lineWidth="0.5"/>
+				</box>
+				<textFieldExpression><![CDATA[$F{montant}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="538" y="0" width="100" height="20" uuid="443b2ce2-7968-465b-b468-fb22a1a4acac"/>
+				<box>
+					<pen lineWidth="0.5"/>
+					<topPen lineWidth="0.5"/>
+					<leftPen lineWidth="0.5"/>
+					<bottomPen lineWidth="0.5"/>
+					<rightPen lineWidth="0.5"/>
+				</box>
+				<textFieldExpression><![CDATA[$F{datepaie}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="638" y="0" width="100" height="20" uuid="769ce5a6-b7cd-427d-9482-5afd6624072a"/>
+				<box>
+					<pen lineWidth="0.5"/>
+					<topPen lineWidth="0.5"/>
+					<leftPen lineWidth="0.5"/>
+					<bottomPen lineWidth="0.5"/>
+					<rightPen lineWidth="0.5"/>
+				</box>
+				<textFieldExpression><![CDATA[$F{typepaie}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="45" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="54" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>

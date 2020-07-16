@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="TotalPaieEleve" language="groovy" pageWidth="792" pageHeight="612" orientation="Landscape" columnWidth="752" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="cb46e053-4849-4dc3-b27d-754fa31f258a">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<queryString>
+		<![CDATA[SELECT e.idel, e.nomel, e.postnomel, e.prenomel, d.annee, cl.classe, SUM(dp.montant) AS mont FROM  eleve e 
+INNER JOIN inscrire i ON e.idel = i.eleve INNER JOIN detail d ON i.idinsc = d.inscrit INNER JOIN paiement p 
+ON d.iddet = p.detail INNER JOIN categorie c ON c.idcat = d.categorie INNER JOIN classe cl ON c.classe = cl.idclass INNER JOIN detailpaiement dp 
+ON p.idpaie = dp.paiement GROUP BY idel, d.annee, cl.classe ORDER BY mont DESC;]]>
+	</queryString>
+	<field name="idel" class="java.lang.String"/>
+	<field name="nomel" class="java.lang.String"/>
+	<field name="postnomel" class="java.lang.String"/>
+	<field name="prenomel" class="java.lang.String"/>
+	<field name="annee" class="java.lang.String"/>
+	<field name="classe" class="java.lang.String"/>
+	<field name="mont" class="java.lang.Long"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="32" splitType="Stretch"/>
+	</title>
+	<pageHeader>
+		<band height="35" splitType="Stretch">
+			<staticText>
+				<reportElement x="168" y="0" width="432" height="20" uuid="d4367dbb-2c7b-4186-8930-d646891ee048"/>
+				<textElement>
+					<font fontName="SansSerif" size="18"/>
+				</textElement>
+				<text><![CDATA[TOTAL PAIE PAR ANNEE POUR CHAQUE ELEVE]]></text>
+			</staticText>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band height="20" splitType="Stretch">
+			<staticText>
+				<reportElement x="24" y="0" width="100" height="20" uuid="01118e91-6b2e-41ea-b78e-5bc55e87dd84"/>
+				<box>
+					<pen lineWidth="0.5"/>
+					<topPen lineWidth="0.5"/>
+					<leftPen lineWidth="0.5"/>
+					<bottomPen lineWidth="0.5"/>
+					<rightPen lineWidth="0.5"/>
+				</box>
+				<textElement>
+					<font fontName="SansSerif" size="13"/>
+				</textElement>
+				<text><![CDATA[ID]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="124" y="0" width="100" height="20" uuid="a7e6fcf2-8cac-4083-a013-b8bffa2e07d0"/>
+				<box>
+					<pen lineWidth="0.5"/>
+					<topPen lineWidth="0.5"/>
+					<leftPen lineWidth="0.5"/>
+					<bottomPen lineWidth="0.5"/>
+					<rightPen lineWidth="0.5"/>
+				</box>
+				<textElement>
+					<font fontName="SansSerif" size="13"/>
+				</textElement>
+				<text><![CDATA[NOM]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="224" y="0" width="100" height="20" uuid="01982480-d680-45dc-be5b-0bbc6ebba888"/>
+				<box>
+					<pen lineWidth="0.5"/>
+					<topPen lineWidth="0.5"/>
+					<leftPen lineWidth="0.5"/>
+					<bottomPen lineWidth="0.5"/>
+					<rightPen lineWidth="0.5"/>
+				</box>
+				<textElement>
+					<font fontName="SansSerif" size="13"/>
+				</textElement>
+				<text><![CDATA[POST NOM]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="324" y="0" width="100" height="20" uuid="dd6a54bd-c58d-4f30-84d9-c9b049f60e12"/>
+				<box>
+					<pen lineWidth="0.5"/>
+					<topPen lineWidth="0.5"/>
+					<leftPen lineWidth="0.5"/>
+					<bottomPen lineWidth="0.5"/>
+					<rightPen lineWidth="0.5"/>
+				</box>
+				<textElement>
+					<font fontName="SansSerif" size="13"/>
+				</textElement>
+				<text><![CDATA[PRENOM]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="424" y="0" width="100" height="20" uuid="d04c79f5-86b0-46d0-abba-3de3f13258ae"/>
+				<box>
+					<pen lineWidth="0.5"/>
+					<topPen lineWidth="0.5"/>
+					<leftPen lineWidth="0.5"/>
+					<bottomPen lineWidth="0.5"/>
+					<rightPen lineWidth="0.5"/>
+				</box>
+				<textElement>
+					<font fontName="SansSerif" size="13"/>
+				</textElement>
+				<text><![CDATA[CLASSE]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="524" y="0" width="100" height="20" uuid="51801363-6710-464d-b3b6-8ebe87e68d0f"/>
+				<box>
+					<pen lineWidth="0.5"/>
+					<topPen lineWidth="0.5"/>
+					<leftPen lineWidth="0.5"/>
+					<bottomPen lineWidth="0.5"/>
+					<rightPen lineWidth="0.5"/>
+				</box>
+				<textElement>
+					<font fontName="SansSerif" size="13"/>
+				</textElement>
+				<text><![CDATA[ANNEE]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="624" y="0" width="100" height="20" uuid="756dae2b-bb4e-4fcb-a791-aeec9200b1d0"/>
+				<box>
+					<pen lineWidth="0.5"/>
+					<topPen lineWidth="0.5"/>
+					<leftPen lineWidth="0.5"/>
+					<bottomPen lineWidth="0.5"/>
+					<rightPen lineWidth="0.5"/>
+				</box>
+				<textElement>
+					<font fontName="SansSerif" size="13"/>
+				</textElement>
+				<text><![CDATA[TOTAL PAIE]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="20" splitType="Stretch">
+			<textField>
+				<reportElement x="24" y="0" width="100" height="20" uuid="58015498-c6d8-4413-ba47-0e43a3d40b11"/>
+				<box>
+					<pen lineWidth="0.5"/>
+					<topPen lineWidth="0.5"/>
+					<leftPen lineWidth="0.5"/>
+					<bottomPen lineWidth="0.5"/>
+					<rightPen lineWidth="0.5"/>
+				</box>
+				<textElement>
+					<font fontName="SansSerif" size="13"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{idel}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="124" y="0" width="100" height="20" uuid="5f4670ad-0838-44d5-8550-72be2f09c532"/>
+				<box>
+					<pen lineWidth="0.5"/>
+					<topPen lineWidth="0.5"/>
+					<leftPen lineWidth="0.5"/>
+					<bottomPen lineWidth="0.5"/>
+					<rightPen lineWidth="0.5"/>
+				</box>
+				<textElement>
+					<font fontName="SansSerif" size="13"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{nomel}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="224" y="0" width="100" height="20" uuid="e1cc086f-67c6-48b0-be24-f65b0e93d68c"/>
+				<box>
+					<pen lineWidth="0.5"/>
+					<topPen lineWidth="0.5"/>
+					<leftPen lineWidth="0.5"/>
+					<bottomPen lineWidth="0.5"/>
+					<rightPen lineWidth="0.5"/>
+				</box>
+				<textElement>
+					<font fontName="SansSerif" size="13"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{postnomel}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="324" y="0" width="100" height="20" uuid="a348f50f-b612-4e0d-b722-936c94614811"/>
+				<box>
+					<pen lineWidth="0.5"/>
+					<topPen lineWidth="0.5"/>
+					<leftPen lineWidth="0.5"/>
+					<bottomPen lineWidth="0.5"/>
+					<rightPen lineWidth="0.5"/>
+				</box>
+				<textElement>
+					<font fontName="SansSerif" size="13"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{prenomel}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="424" y="0" width="100" height="20" uuid="58228026-35db-4515-9e9d-6a7022179a44"/>
+				<box>
+					<pen lineWidth="0.5"/>
+					<topPen lineWidth="0.5"/>
+					<leftPen lineWidth="0.5"/>
+					<bottomPen lineWidth="0.5"/>
+					<rightPen lineWidth="0.5"/>
+				</box>
+				<textElement>
+					<font fontName="SansSerif" size="13"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{classe}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="524" y="0" width="100" height="20" uuid="9030e3d6-1ef4-49e7-b340-c23cf6abca7f"/>
+				<box>
+					<pen lineWidth="0.5"/>
+					<topPen lineWidth="0.5"/>
+					<leftPen lineWidth="0.5"/>
+					<bottomPen lineWidth="0.5"/>
+					<rightPen lineWidth="0.5"/>
+				</box>
+				<textElement>
+					<font fontName="SansSerif" size="13"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{annee}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="624" y="0" width="100" height="20" uuid="99054ba9-1180-4ea0-af4a-057946c57a22"/>
+				<box>
+					<pen lineWidth="0.5"/>
+					<topPen lineWidth="0.5"/>
+					<leftPen lineWidth="0.5"/>
+					<bottomPen lineWidth="0.5"/>
+					<rightPen lineWidth="0.5"/>
+				</box>
+				<textElement>
+					<font fontName="SansSerif" size="13"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{mont}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="45" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="54" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>

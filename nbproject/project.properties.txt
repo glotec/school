@@ -1,0 +1,423 @@
+annotation.processing.enabled=true
+annotation.processing.enabled.in.editor=false
+annotation.processing.processors.list=
+annotation.processing.run.all.processors=true
+annotation.processing.source.output=${build.generated.sources.dir}/ap-source-output
+application.title=Scolarite
+application.vendor=gloire
+build.classes.dir=${build.dir}/classes
+build.classes.excludes=**/*.java,**/*.form
+# This directory is removed when the project is cleaned:
+build.dir=build
+build.generated.dir=${build.dir}/generated
+build.generated.sources.dir=${build.dir}/generated-sources
+# Only compile against the classpath explicitly listed here:
+build.sysclasspath=ignore
+build.test.classes.dir=${build.dir}/test/classes
+build.test.results.dir=${build.dir}/test/results
+# Uncomment to specify the preferred debugger connection transport:
+#debug.transport=dt_socket
+debug.classpath=\
+    ${run.classpath}
+debug.test.classpath=\
+    ${run.test.classpath}
+# Files in build.classes.dir which should be excluded from distribution jar
+dist.archive.excludes=
+# This directory is removed when the project is cleaned:
+dist.dir=dist
+dist.jar=${dist.dir}/Scolarite.jar
+dist.javadoc.dir=${dist.dir}/javadoc
+endorsed.classpath=
+excludes=
+file.reference.AbsoluteLayout.jar=/media/gloire/Disque Local (/Projects/Java/jar + ireport/JAR/JSP/AbsoluteLayout.jar
+file.reference.ant-1.7.1.jar=/media/gloire/Disque Local (/Projects/Java/jar + ireport/JAR/JSP/ant-1.7.1.jar
+file.reference.ant-javamail.jar=/media/gloire/Disque Local (/Projects/Java/jar + ireport/JAR/JSP/ant-javamail.jar
+file.reference.antlr-2.7.5.jar=/media/gloire/Disque Local (/Projects/Java/jar + ireport/JAR/JSP/antlr-2.7.5.jar
+file.reference.antlr-2.7.6.jar=/media/gloire/Disque Local (/Projects/Java/jar + ireport/JAR/JSP/antlr-2.7.6.jar
+file.reference.asm-attrs.jar=/media/gloire/Disque Local (/Projects/Java/jar + ireport/JAR/JSP/asm-attrs.jar
+file.reference.asm.jar=/media/gloire/Disque Local (/Projects/Java/jar + ireport/JAR/JSP/asm.jar
+file.reference.barbecue-1.5-beta1.jar=/media/gloire/Disque Local (/Projects/Java/jar + ireport/JAR/JSP/barbecue-1.5-beta1.jar
+file.reference.barcode4j-2.0.jar=/media/gloire/Disque Local (/Projects/Java/jar + ireport/JAR/JSP/barcode4j-2.0.jar
+file.reference.barcode4j-2.1.jar=/media/gloire/Disque Local (/Projects/Java/jar + ireport/JAR/JSP/barcode4j-2.1.jar
+file.reference.batik-anim.jar=/media/gloire/Disque Local (/Projects/Java/jar + ireport/JAR/JSP/batik-anim.jar
+file.reference.batik-awt-util.jar=/media/gloire/Disque Local (/Projects/Java/jar + ireport/JAR/JSP/batik-awt-util.jar
+file.reference.batik-bridge.jar=/media/gloire/Disque Local (/Projects/Java/jar + ireport/JAR/JSP/batik-bridge.jar
+file.reference.batik-css.jar=/media/gloire/Disque Local (/Projects/Java/jar + ireport/JAR/JSP/batik-css.jar
+file.reference.batik-dom.jar=/media/gloire/Disque Local (/Projects/Java/jar + ireport/JAR/JSP/batik-dom.jar
+file.reference.batik-ext.jar=/media/gloire/Disque Local (/Projects/Java/jar + ireport/JAR/JSP/batik-ext.jar
+file.reference.batik-gvt.jar=/media/gloire/Disque Local (/Projects/Java/jar + ireport/JAR/JSP/batik-gvt.jar
+file.reference.batik-parser.jar=/media/gloire/Disque Local (/Projects/Java/jar + ireport/JAR/JSP/batik-parser.jar
+file.reference.batik-script.jar=/media/gloire/Disque Local (/Projects/Java/jar + ireport/JAR/JSP/batik-script.jar
+file.reference.batik-svg-dom.jar=/media/gloire/Disque Local (/Projects/Java/jar + ireport/JAR/JSP/batik-svg-dom.jar
+file.reference.batik-svggen.jar=/media/gloire/Disque Local (/Projects/Java/jar + ireport/JAR/JSP/batik-svggen.jar
+file.reference.batik-transcoder.jar=/media/gloire/Disque Local (/Projects/Java/jar + ireport/JAR/JSP/batik-transcoder.jar
+file.reference.batik-util.jar=/media/gloire/Disque Local (/Projects/Java/jar + ireport/JAR/JSP/batik-util.jar
+file.reference.batik-xml.jar=/media/gloire/Disque Local (/Projects/Java/jar + ireport/JAR/JSP/batik-xml.jar
+file.reference.bcel-5.2.jar=/media/gloire/Disque Local (/Projects/Java/jar + ireport/JAR/JSP/bcel-5.2.jar
+file.reference.bsh-2.0b4.jar=/media/gloire/Disque Local (/Projects/Java/jar + ireport/JAR/JSP/bsh-2.0b4.jar
+file.reference.bsh-2.1b5.jar=/media/gloire/Disque Local (/Projects/Java/jar + ireport/JAR/JSP/bsh-2.1b5.jar
+file.reference.castor-1.2.jar=/media/gloire/Disque Local (/Projects/Java/jar + ireport/JAR/JSP/castor-1.2.jar
+file.reference.cgjsapi.jar=/media/gloire/Disque Local (/Projects/Java/jar + ireport/JAR/JSP/cgjsapi.jar
+file.reference.cglib-2.1.jar=/media/gloire/Disque Local (/Projects/Java/jar + ireport/JAR/JSP/cglib-2.1.jar
+file.reference.cincom-jr-xmla.jar=/media/gloire/Disque Local (/Projects/Java/jar + ireport/JAR/JSP/cincom-jr-xmla.jar
+file.reference.com-jaspersoft-ireport-addons.jar=/media/gloire/Disque Local (/Projects/Java/jar + ireport/JAR/JSP/com-jaspersoft-ireport-addons.jar
+file.reference.com-jaspersoft-ireport-components.jar=/media/gloire/Disque Local (/Projects/Java/jar + ireport/JAR/JSP/com-jaspersoft-ireport-components.jar
+file.reference.com-jaspersoft-ireport-designer-standalone.jar=/media/gloire/Disque Local (/Projects/Java/jar + ireport/JAR/JSP/com-jaspersoft-ireport-designer-standalone.jar
+file.reference.com-jaspersoft-ireport-hadoop-hive.jar=/media/gloire/Disque Local (/Projects/Java/jar + ireport/JAR/JSP/com-jaspersoft-ireport-hadoop-hive.jar
+file.reference.com-jaspersoft-ireport-heartbeat.jar=/media/gloire/Disque Local (/Projects/Java/jar + ireport/JAR/JSP/com-jaspersoft-ireport-heartbeat.jar
+file.reference.com-jaspersoft-ireport-jasperserver.jar=/media/gloire/Disque Local (/Projects/Java/jar + ireport/JAR/JSP/com-jaspersoft-ireport-jasperserver.jar
+file.reference.com-jaspersoft-ireport-mongodb.jar=/media/gloire/Disque Local (/Projects/Java/jar + ireport/JAR/JSP/com-jaspersoft-ireport-mongodb.jar
+file.reference.com-jaspersoft-ireport-samples.jar=/media/gloire/Disque Local (/Projects/Java/jar + ireport/JAR/JSP/com-jaspersoft-ireport-samples.jar
+file.reference.com-jaspersoft-ireport.jar=/media/gloire/Disque Local (/Projects/Java/jar + ireport/JAR/JSP/com-jaspersoft-ireport.jar
+file.reference.com-jaspersoft-jrx.jar=/media/gloire/Disque Local (/Projects/Java/jar + ireport/JAR/JSP/com-jaspersoft-jrx.jar
+file.reference.com.mysql.jdbc_5.1.5.jar=/media/gloire/Disque Local (/Projects/Java/jar + ireport/JAR/JSP/com.mysql.jdbc_5.1.5.jar
+file.reference.commons-beanutils-1.8.0.jar=/media/gloire/Disque Local (/Projects/Java/jar + ireport/JAR/JSP/commons-beanutils-1.8.0.jar
+file.reference.commons-beanutils-1.8.2.jar=/media/gloire/Disque Local (/Projects/Java/jar + ireport/JAR/JSP/commons-beanutils-1.8.2.jar
+file.reference.commons-collections-2.1.1.jar=/media/gloire/Disque Local (/Projects/Java/jar + ireport/JAR/JSP/commons-collections-2.1.1.jar
+file.reference.commons-collections-3.2.1.jar=/media/gloire/Disque Local (/Projects/Java/jar + ireport/JAR/JSP/commons-collections-3.2.1.jar
+file.reference.commons-dbcp-1.2.2.jar=/media/gloire/Disque Local (/Projects/Java/jar + ireport/JAR/JSP/commons-dbcp-1.2.2.jar
+file.reference.commons-digester-2.1.jar=/media/gloire/Disque Local (/Projects/Java/jar + ireport/JAR/JSP/commons-digester-2.1.jar
+file.reference.commons-javaflow-20060411.jar=/media/gloire/Disque Local (/Projects/Java/jar + ireport/JAR/JSP/commons-javaflow-20060411.jar
+file.reference.commons-logging-1.1.1.jar=/media/gloire/Disque Local (/Projects/Java/jar + ireport/JAR/JSP/commons-logging-1.1.1.jar
+file.reference.commons-logging-1.1.jar=/media/gloire/Disque Local (/Projects/Java/jar + ireport/JAR/JSP/commons-logging-1.1.jar
+file.reference.commons-math-1.0.jar=/media/gloire/Disque Local (/Projects/Java/jar + ireport/JAR/JSP/commons-math-1.0.jar
+file.reference.commons-pool-1.3.jar=/media/gloire/Disque Local (/Projects/Java/jar + ireport/JAR/JSP/commons-pool-1.3.jar
+file.reference.commons-pool-1.6.jar=/media/gloire/Disque Local (/Projects/Java/jar + ireport/JAR/JSP/commons-pool-1.6.jar
+file.reference.commons-vfs-1.0.jar=/media/gloire/Disque Local (/Projects/Java/jar + ireport/JAR/JSP/commons-vfs-1.0.jar
+file.reference.customizer.jar=/media/gloire/Disque Local (/Projects/Java/jar + ireport/JAR/JSP/customizer.jar
+file.reference.dom4j-1.6.1.jar=/media/gloire/Disque Local (/Projects/Java/jar + ireport/JAR/JSP/dom4j-1.6.1.jar
+file.reference.dom4j-1.6.jar=/media/gloire/Disque Local (/Projects/Java/jar + ireport/JAR/JSP/dom4j-1.6.jar
+file.reference.ehcache-1.1.jar=/media/gloire/Disque Local (/Projects/Java/jar + ireport/JAR/JSP/ehcache-1.1.jar
+file.reference.eigenbase-properties-1.1.0.10924.jar=/media/gloire/Disque Local (/Projects/Java/jar + ireport/JAR/JSP/eigenbase-properties-1.1.0.10924.jar
+file.reference.eigenbase-resgen-1.3.0.11873.jar=/media/gloire/Disque Local (/Projects/Java/jar + ireport/JAR/JSP/eigenbase-resgen-1.3.0.11873.jar
+file.reference.eigenbase-xom-1.3.0.11999.jar=/media/gloire/Disque Local (/Projects/Java/jar + ireport/JAR/JSP/eigenbase-xom-1.3.0.11999.jar
+file.reference.ejb3-persistence.jar=/media/gloire/Disque Local (/Projects/Java/jar + ireport/JAR/JSP/ejb3-persistence.jar
+file.reference.groovy-all-1.7.5.jar=/media/gloire/Disque Local (/Projects/Java/jar + ireport/JAR/JSP/groovy-all-1.7.5.jar
+file.reference.groovy-all-2.0.1.jar=/media/gloire/Disque Local (/Projects/Java/jar + ireport/JAR/JSP/groovy-all-2.0.1.jar
+file.reference.hadoop-core-1.0.1.jar=/media/gloire/Disque Local (/Projects/Java/jar + ireport/JAR/JSP/hadoop-core-1.0.1.jar
+file.reference.HappyApp.jar=/media/gloire/Disque Local (/Projects/Java/jar + ireport/JAR/JSP/HappyApp.jar
+file.reference.hibernate-annotations.jar=/media/gloire/Disque Local (/Projects/Java/jar + ireport/JAR/JSP/hibernate-annotations.jar
+file.reference.hibernate-commons-annotations.jar=/media/gloire/Disque Local (/Projects/Java/jar + ireport/JAR/JSP/hibernate-commons-annotations.jar
+file.reference.hibernate3.jar=/media/gloire/Disque Local (/Projects/Java/jar + ireport/JAR/JSP/hibernate3.jar
+file.reference.hive-common-0.8.1.jar=/media/gloire/Disque Local (/Projects/Java/jar + ireport/JAR/JSP/hive-common-0.8.1.jar
+file.reference.hive-exec-0.8.1.jar=/media/gloire/Disque Local (/Projects/Java/jar + ireport/JAR/JSP/hive-exec-0.8.1.jar
+file.reference.hive-jdbc-0.8.1.jar=/media/gloire/Disque Local (/Projects/Java/jar + ireport/JAR/JSP/hive-jdbc-0.8.1.jar
+file.reference.hive-metastore-0.8.1.jar=/media/gloire/Disque Local (/Projects/Java/jar + ireport/JAR/JSP/hive-metastore-0.8.1.jar
+file.reference.hive-service-0.8.1.jar=/media/gloire/Disque Local (/Projects/Java/jar + ireport/JAR/JSP/hive-service-0.8.1.jar
+file.reference.hsqldb-1.8.0-10.jar=/media/gloire/Disque Local (/Projects/Java/jar + ireport/JAR/JSP/hsqldb-1.8.0-10.jar
+file.reference.iText-2.1.7.jar=/media/gloire/Disque Local (/Projects/Java/jar + ireport/JAR/JSP/iText-2.1.7.jar
+file.reference.iText-2.1.7.js2.jar=/media/gloire/Disque Local (/Projects/Java/jar + ireport/JAR/JSP/iText-2.1.7.js2.jar
+file.reference.iTextAsian.jar=/media/gloire/Disque Local (/Projects/Java/jar + ireport/JAR/JSP/iTextAsian.jar
+file.reference.jackson-annotations-2.1.4.jar=/media/gloire/Disque Local (/Projects/Java/jar + ireport/JAR/JSP/jackson-annotations-2.1.4.jar
+file.reference.jackson-core-2.1.4.jar=/media/gloire/Disque Local (/Projects/Java/jar + ireport/JAR/JSP/jackson-core-2.1.4.jar
+file.reference.jackson-core-asl-1.9.4.jar=/media/gloire/Disque Local (/Projects/Java/jar + ireport/JAR/JSP/jackson-core-asl-1.9.4.jar
+file.reference.jackson-databind-2.1.4.jar=/media/gloire/Disque Local (/Projects/Java/jar + ireport/JAR/JSP/jackson-databind-2.1.4.jar
+file.reference.jackson-mapper-asl-1.9.4.jar=/media/gloire/Disque Local (/Projects/Java/jar + ireport/JAR/JSP/jackson-mapper-asl-1.9.4.jar
+file.reference.jasperreports-5.5.0.jar=/media/gloire/Disque Local (/Projects/Java/jar + ireport/JAR/JSP/jasperreports-5.5.0.jar
+file.reference.jasperreports-5.6.0.jar=/media/gloire/Disque Local (/Projects/Java/jar + ireport/JAR/JSP/jasperreports-5.6.0.jar
+file.reference.jasperreports-chart-themes-5.2.0.jar=/media/gloire/Disque Local (/Projects/Java/jar + ireport/JAR/JSP/jasperreports-chart-themes-5.2.0.jar
+file.reference.jasperreports-chart-themes-5.6.0.jar=/media/gloire/Disque Local (/Projects/Java/jar + ireport/JAR/JSP/jasperreports-chart-themes-5.6.0.jar
+file.reference.jasperreports-core-renderer.jar=/media/gloire/Disque Local (/Projects/Java/jar + ireport/JAR/JSP/jasperreports-core-renderer.jar
+file.reference.jasperreports-extensions-3.5.3.jar=/media/gloire/Disque Local (/Projects/Java/jar + ireport/JAR/JSP/jasperreports-extensions-3.5.3.jar
+file.reference.jasperreports-fonts-5.5.0.jar=/media/gloire/Disque Local (/Projects/Java/jar + ireport/JAR/JSP/jasperreports-fonts-5.5.0.jar
+file.reference.jasperreports-fonts-5.6.0.jar=/media/gloire/Disque Local (/Projects/Java/jar + ireport/JAR/JSP/jasperreports-fonts-5.6.0.jar
+file.reference.jasperreports-functions-5.5.0.jar=/media/gloire/Disque Local (/Projects/Java/jar + ireport/JAR/JSP/jasperreports-functions-5.5.0.jar
+file.reference.jasperreports-functions-5.6.0.jar=/media/gloire/Disque Local (/Projects/Java/jar + ireport/JAR/JSP/jasperreports-functions-5.6.0.jar
+file.reference.jasperreports-htmlcomponent-4.7.1.jar=/media/gloire/Disque Local (/Projects/Java/jar + ireport/JAR/JSP/jasperreports-htmlcomponent-4.7.1.jar
+file.reference.jasperreports-htmlcomponent-5.0.1.jar=/media/gloire/Disque Local (/Projects/Java/jar + ireport/JAR/JSP/jasperreports-htmlcomponent-5.0.1.jar
+file.reference.jasperreports-json.jar=/media/gloire/Disque Local (/Projects/Java/jar + ireport/JAR/JSP/jasperreports-json.jar
+file.reference.jasperreports-jtidy-r938.jar=/media/gloire/Disque Local (/Projects/Java/jar + ireport/JAR/JSP/jasperreports-jtidy-r938.jar
+file.reference.javacup.jar=/media/gloire/Disque Local (/Projects/Java/jar + ireport/JAR/JSP/javacup.jar
+file.reference.javassist-3.4.GA.jar=/media/gloire/Disque Local (/Projects/Java/jar + ireport/JAR/JSP/javassist-3.4.GA.jar
+file.reference.jaxen-1.1.1.jar=/media/gloire/Disque Local (/Projects/Java/jar + ireport/JAR/JSP/jaxen-1.1.1.jar
+file.reference.jcalendar-1.4.jar=/media/gloire/Disque Local (/Projects/Java/jar + ireport/JAR/JSP/jcalendar-1.4.jar
+file.reference.jcommon-1.0.15.jar=/media/gloire/Disque Local (/Projects/Java/jar + ireport/JAR/JSP/jcommon-1.0.15.jar
+file.reference.jcommon-1.0.23.jar=/media/gloire/Disque Local (/Projects/Java/jar + ireport/JAR/JSP/jcommon-1.0.23.jar
+file.reference.jdt-compiler-3.1.1.jar=/media/gloire/Disque Local (/Projects/Java/jar + ireport/JAR/JSP/jdt-compiler-3.1.1.jar
+file.reference.jfoenix.jar=/media/gloire/Disque Local (/Projects/Java/jar + ireport/JAR/JSP/jfoenix.jar
+file.reference.jfreechart-1.0.12.jar=/media/gloire/Disque Local (/Projects/Java/jar + ireport/JAR/JSP/jfreechart-1.0.12.jar
+file.reference.jfreechart-1.0.13.jar.zip=/media/gloire/Disque Local (/Projects/Java/jar + ireport/JAR/JSP/jfreechart-1.0.13.jar.zip
+file.reference.jfreechart-1.0.19-experimental.jar=/media/gloire/Disque Local (/Projects/Java/jar + ireport/JAR/JSP/jfreechart-1.0.19-experimental.jar
+file.reference.jfreechart-1.0.19-swt.jar=/media/gloire/Disque Local (/Projects/Java/jar + ireport/JAR/JSP/jfreechart-1.0.19-swt.jar
+file.reference.jfreechart-1.0.19.jar=/media/gloire/Disque Local (/Projects/Java/jar + ireport/JAR/JSP/jfreechart-1.0.19.jar
+file.reference.jfreesvg-2.0.jar=/media/gloire/Disque Local (/Projects/Java/jar + ireport/JAR/JSP/jfreesvg-2.0.jar
+file.reference.jmf.jar=/media/gloire/Disque Local (/Projects/Java/jar + ireport/JAR/JSP/jmf.jar
+file.reference.jmrtd.jar=/media/gloire/Disque Local (/Projects/Java/jar + ireport/JAR/JSP/jmrtd.jar
+file.reference.jna-3.5.1.jar=/media/gloire/Disque Local (/Projects/Java/jar + ireport/JAR/JSP/jna-3.5.1.jar
+file.reference.joda-time-2.1.jar=/media/gloire/Disque Local (/Projects/Java/jar + ireport/JAR/JSP/joda-time-2.1.jar
+file.reference.jpa.jar=/media/gloire/Disque Local (/Projects/Java/jar + ireport/JAR/JSP/jpa.jar
+file.reference.js-hive-datasource-1.0.4.jar=/media/gloire/Disque Local (/Projects/Java/jar + ireport/JAR/JSP/js-hive-datasource-1.0.4.jar
+file.reference.js-mongodb-datasource-1.0.0a.jar=/media/gloire/Disque Local (/Projects/Java/jar + ireport/JAR/JSP/js-mongodb-datasource-1.0.0a.jar
+file.reference.js_activation-1.1.jar=/media/gloire/Disque Local (/Projects/Java/jar + ireport/JAR/JSP/js_activation-1.1.jar
+file.reference.js_axis-1.4patched.jar=/media/gloire/Disque Local (/Projects/Java/jar + ireport/JAR/JSP/js_axis-1.4patched.jar
+file.reference.js_commons-codec-1.3.jar=/media/gloire/Disque Local (/Projects/Java/jar + ireport/JAR/JSP/js_commons-codec-1.3.jar
+file.reference.js_commons-discovery-0.2.jar=/media/gloire/Disque Local (/Projects/Java/jar + ireport/JAR/JSP/js_commons-discovery-0.2.jar
+file.reference.js_commons-httpclient-3.1.jar=/media/gloire/Disque Local (/Projects/Java/jar + ireport/JAR/JSP/js_commons-httpclient-3.1.jar
+file.reference.js_jasperserver-common-ws-4.7.1.jar=/media/gloire/Disque Local (/Projects/Java/jar + ireport/JAR/JSP/js_jasperserver-common-ws-4.7.1.jar
+file.reference.js_jaxrpc.jar=/media/gloire/Disque Local (/Projects/Java/jar + ireport/JAR/JSP/js_jaxrpc.jar
+file.reference.js_mail-1.4.jar=/media/gloire/Disque Local (/Projects/Java/jar + ireport/JAR/JSP/js_mail-1.4.jar
+file.reference.js_saaj-api-1.3.jar=/media/gloire/Disque Local (/Projects/Java/jar + ireport/JAR/JSP/js_saaj-api-1.3.jar
+file.reference.js_wsdl4j-1.5.1.jar=/media/gloire/Disque Local (/Projects/Java/jar + ireport/JAR/JSP/js_wsdl4j-1.5.1.jar
+file.reference.jta.jar=/media/gloire/Disque Local (/Projects/Java/jar + ireport/JAR/JSP/jta.jar
+file.reference.JTattoo-1.6.11.jar=/media/gloire/Disque Local (/Projects/Java/jar + ireport/JAR/JSP/JTattoo-1.6.11.jar
+file.reference.jxl-2.6.10.jar=/media/gloire/Disque Local (/Projects/Java/jar + ireport/JAR/JSP/jxl-2.6.10.jar
+file.reference.libfb303-0.7.0.jar=/media/gloire/Disque Local (/Projects/Java/jar + ireport/JAR/JSP/libfb303-0.7.0.jar
+file.reference.libthrift-0.9.0-snapshot.jar=/media/gloire/Disque Local (/Projects/Java/jar + ireport/JAR/JSP/libthrift-0.9.0-snapshot.jar
+file.reference.log4j-1.2.15.jar=/media/gloire/Disque Local (/Projects/Java/jar + ireport/JAR/JSP/log4j-1.2.15.jar
+file.reference.mondrian-3.1.1.12687.jar=/media/gloire/Disque Local (/Projects/Java/jar + ireport/JAR/JSP/mondrian-3.1.1.12687.jar
+file.reference.mondrian-3.2.0-13661-JS.jar=/media/gloire/Disque Local (/Projects/Java/jar + ireport/JAR/JSP/mondrian-3.2.0-13661-JS.jar
+file.reference.mongo-java-driver-2.7.3.jar=/media/gloire/Disque Local (/Projects/Java/jar + ireport/JAR/JSP/mongo-java-driver-2.7.3.jar
+file.reference.mysql-connector-java-5.1.13-bin.jar=/media/gloire/Disque Local (/Projects/Java/jar + ireport/JAR/JSP/mysql-connector-java-5.1.13-bin.jar
+file.reference.mysql-connector-java-5.1.23-bin.jar=/media/gloire/Disque Local (/Projects/Java/jar + ireport/JAR/JSP/mysql-connector-java-5.1.23-bin.jar
+file.reference.olap4j-0.9.7.309-JS.jar=/media/gloire/Disque Local (/Projects/Java/jar + ireport/JAR/JSP/olap4j-0.9.7.309-JS.jar
+file.reference.org-netbeans-core-windows_ireport.jar=/media/gloire/Disque Local (/Projects/Java/jar + ireport/JAR/JSP/org-netbeans-core-windows_ireport.jar
+file.reference.org-netbeans-core_ireport.jar=/media/gloire/Disque Local (/Projects/Java/jar + ireport/JAR/JSP/org-netbeans-core_ireport.jar
+file.reference.platform-3.5.1.jar=/media/gloire/Disque Local (/Projects/Java/jar + ireport/JAR/JSP/platform-3.5.1.jar
+file.reference.png-encoder-1.5.jar=/media/gloire/Disque Local (/Projects/Java/jar + ireport/JAR/JSP/png-encoder-1.5.jar
+file.reference.poi-3.7-20101029.jar=/media/gloire/Disque Local (/Projects/Java/jar + ireport/JAR/JSP/poi-3.7-20101029.jar
+file.reference.poi-ooxml-3.7-20101029.jar=/media/gloire/Disque Local (/Projects/Java/jar + ireport/JAR/JSP/poi-ooxml-3.7-20101029.jar
+file.reference.poi-ooxml-schemas-3.7-20101029.jar=/media/gloire/Disque Local (/Projects/Java/jar + ireport/JAR/JSP/poi-ooxml-schemas-3.7-20101029.jar
+file.reference.rex-0.8.1.jar=/media/gloire/Disque Local (/Projects/Java/jar + ireport/JAR/JSP/rex-0.8.1.jar
+file.reference.rex-20080421.jar=/media/gloire/Disque Local (/Projects/Java/jar + ireport/JAR/JSP/rex-20080421.jar
+file.reference.rhino-1.7R1.jar=/media/gloire/Disque Local (/Projects/Java/jar + ireport/JAR/JSP/rhino-1.7R1.jar
+file.reference.rhino-1.7R3.jar=/media/gloire/Disque Local (/Projects/Java/jar + ireport/JAR/JSP/rhino-1.7R3.jar
+file.reference.rs2xml.jar=/media/gloire/Disque Local (/Projects/Java/jar + ireport/JAR/JSP/rs2xml.jar
+file.reference.saaj-api-1.3.jar=/media/gloire/Disque Local (/Projects/Java/jar + ireport/JAR/JSP/saaj-api-1.3.jar
+file.reference.serializer.jar=/media/gloire/Disque Local (/Projects/Java/jar + ireport/JAR/JSP/serializer.jar
+file.reference.servlet-api-2.4.jar=/media/gloire/Disque Local (/Projects/Java/jar + ireport/JAR/JSP/servlet-api-2.4.jar
+file.reference.slf4j-api-1.5.8.jar=/media/gloire/Disque Local (/Projects/Java/jar + ireport/JAR/JSP/slf4j-api-1.5.8.jar
+file.reference.slf4j-log4j12-1.5.8.jar=/media/gloire/Disque Local (/Projects/Java/jar + ireport/JAR/JSP/slf4j-log4j12-1.5.8.jar
+file.reference.spring-beans-2.5.5.jar=/media/gloire/Disque Local (/Projects/Java/jar + ireport/JAR/JSP/spring-beans-2.5.5.jar
+file.reference.spring-core-2.5.5.jar=/media/gloire/Disque Local (/Projects/Java/jar + ireport/JAR/JSP/spring-core-2.5.5.jar
+file.reference.spring.jar=/media/gloire/Disque Local (/Projects/Java/jar + ireport/JAR/JSP/spring.jar
+file.reference.sqleonardo-2009.03.rc1.jar=/media/gloire/Disque Local (/Projects/Java/jar + ireport/JAR/JSP/sqleonardo-2009.03.rc1.jar
+file.reference.sqljdbc4-2.0.jar=/media/gloire/Disque Local (/Projects/Java/jar + ireport/JAR/JSP/sqljdbc4-2.0.jar
+file.reference.swingx-1.6.2.jar=/media/gloire/Disque Local (/Projects/Java/jar + ireport/JAR/JSP/swingx-1.6.2.jar
+file.reference.swingx-1.6.2__2_.jar=/media/gloire/Disque Local (/Projects/Java/jar + ireport/JAR/JSP/swingx-1.6.2 (2).jar
+file.reference.swingx-2007_10_07.jar=/media/gloire/Disque Local (/Projects/Java/jar + ireport/JAR/JSP/swingx-2007_10_07.jar
+file.reference.swingx-all-1.6.4.jar=/media/gloire/Disque Local (/Projects/Java/jar + ireport/JAR/JSP/swingx-all-1.6.4.jar
+file.reference.velocity-1.7-dep.jar=/media/gloire/Disque Local (/Projects/Java/jar + ireport/JAR/JSP/velocity-1.7-dep.jar
+file.reference.xalan-2.7.1.jar=/media/gloire/Disque Local (/Projects/Java/jar + ireport/JAR/JSP/xalan-2.7.1.jar
+file.reference.xbean.jar=/media/gloire/Disque Local (/Projects/Java/jar + ireport/JAR/JSP/xbean.jar
+file.reference.xercesImpl-2.7.0.jar=/media/gloire/Disque Local (/Projects/Java/jar + ireport/JAR/JSP/xercesImpl-2.7.0.jar
+file.reference.xml-apis-ext.jar=/media/gloire/Disque Local (/Projects/Java/jar + ireport/JAR/JSP/xml-apis-ext.jar
+file.reference.xml-apis.jar=/media/gloire/Disque Local (/Projects/Java/jar + ireport/JAR/JSP/xml-apis.jar
+includes=**
+jar.compress=false
+javac.classpath=\
+    ${libs.PostgreSQLDriver.classpath}:\
+    ${libs.absolutelayout.classpath}:\
+    ${file.reference.AbsoluteLayout.jar}:\
+    ${file.reference.HappyApp.jar}:\
+    ${file.reference.JTattoo-1.6.11.jar}:\
+    ${file.reference.ant-1.7.1.jar}:\
+    ${file.reference.ant-javamail.jar}:\
+    ${file.reference.antlr-2.7.5.jar}:\
+    ${file.reference.antlr-2.7.6.jar}:\
+    ${file.reference.asm-attrs.jar}:\
+    ${file.reference.asm.jar}:\
+    ${file.reference.barbecue-1.5-beta1.jar}:\
+    ${file.reference.barcode4j-2.0.jar}:\
+    ${file.reference.barcode4j-2.1.jar}:\
+    ${file.reference.batik-anim.jar}:\
+    ${file.reference.batik-awt-util.jar}:\
+    ${file.reference.batik-bridge.jar}:\
+    ${file.reference.batik-css.jar}:\
+    ${file.reference.batik-dom.jar}:\
+    ${file.reference.batik-ext.jar}:\
+    ${file.reference.batik-gvt.jar}:\
+    ${file.reference.batik-parser.jar}:\
+    ${file.reference.batik-script.jar}:\
+    ${file.reference.batik-svg-dom.jar}:\
+    ${file.reference.batik-svggen.jar}:\
+    ${file.reference.batik-transcoder.jar}:\
+    ${file.reference.batik-util.jar}:\
+    ${file.reference.batik-xml.jar}:\
+    ${file.reference.bcel-5.2.jar}:\
+    ${file.reference.bsh-2.0b4.jar}:\
+    ${file.reference.bsh-2.1b5.jar}:\
+    ${file.reference.castor-1.2.jar}:\
+    ${file.reference.cgjsapi.jar}:\
+    ${file.reference.cglib-2.1.jar}:\
+    ${file.reference.cincom-jr-xmla.jar}:\
+    ${file.reference.com-jaspersoft-ireport-addons.jar}:\
+    ${file.reference.com-jaspersoft-ireport-components.jar}:\
+    ${file.reference.com-jaspersoft-ireport-designer-standalone.jar}:\
+    ${file.reference.com-jaspersoft-ireport-hadoop-hive.jar}:\
+    ${file.reference.com-jaspersoft-ireport-heartbeat.jar}:\
+    ${file.reference.com-jaspersoft-ireport-jasperserver.jar}:\
+    ${file.reference.com-jaspersoft-ireport-mongodb.jar}:\
+    ${file.reference.com-jaspersoft-ireport-samples.jar}:\
+    ${file.reference.com-jaspersoft-ireport.jar}:\
+    ${file.reference.com-jaspersoft-jrx.jar}:\
+    ${file.reference.com.mysql.jdbc_5.1.5.jar}:\
+    ${file.reference.commons-beanutils-1.8.0.jar}:\
+    ${file.reference.commons-beanutils-1.8.2.jar}:\
+    ${file.reference.commons-collections-2.1.1.jar}:\
+    ${file.reference.commons-collections-3.2.1.jar}:\
+    ${file.reference.commons-dbcp-1.2.2.jar}:\
+    ${file.reference.commons-digester-2.1.jar}:\
+    ${file.reference.commons-javaflow-20060411.jar}:\
+    ${file.reference.commons-logging-1.1.1.jar}:\
+    ${file.reference.commons-logging-1.1.jar}:\
+    ${file.reference.commons-math-1.0.jar}:\
+    ${file.reference.commons-pool-1.3.jar}:\
+    ${file.reference.commons-pool-1.6.jar}:\
+    ${file.reference.commons-vfs-1.0.jar}:\
+    ${file.reference.customizer.jar}:\
+    ${file.reference.dom4j-1.6.1.jar}:\
+    ${file.reference.dom4j-1.6.jar}:\
+    ${file.reference.ehcache-1.1.jar}:\
+    ${file.reference.eigenbase-properties-1.1.0.10924.jar}:\
+    ${file.reference.eigenbase-resgen-1.3.0.11873.jar}:\
+    ${file.reference.eigenbase-xom-1.3.0.11999.jar}:\
+    ${file.reference.ejb3-persistence.jar}:\
+    ${file.reference.groovy-all-1.7.5.jar}:\
+    ${file.reference.groovy-all-2.0.1.jar}:\
+    ${file.reference.hadoop-core-1.0.1.jar}:\
+    ${file.reference.hibernate-annotations.jar}:\
+    ${file.reference.hibernate-commons-annotations.jar}:\
+    ${file.reference.hibernate3.jar}:\
+    ${file.reference.hive-common-0.8.1.jar}:\
+    ${file.reference.hive-exec-0.8.1.jar}:\
+    ${file.reference.hive-jdbc-0.8.1.jar}:\
+    ${file.reference.hive-metastore-0.8.1.jar}:\
+    ${file.reference.hive-service-0.8.1.jar}:\
+    ${file.reference.hsqldb-1.8.0-10.jar}:\
+    ${file.reference.iText-2.1.7.jar}:\
+    ${file.reference.iText-2.1.7.js2.jar}:\
+    ${file.reference.iTextAsian.jar}:\
+    ${file.reference.jackson-annotations-2.1.4.jar}:\
+    ${file.reference.jackson-core-2.1.4.jar}:\
+    ${file.reference.jackson-core-asl-1.9.4.jar}:\
+    ${file.reference.jackson-databind-2.1.4.jar}:\
+    ${file.reference.jackson-mapper-asl-1.9.4.jar}:\
+    ${file.reference.jasperreports-5.5.0.jar}:\
+    ${file.reference.jasperreports-5.6.0.jar}:\
+    ${file.reference.jasperreports-chart-themes-5.2.0.jar}:\
+    ${file.reference.jasperreports-chart-themes-5.6.0.jar}:\
+    ${file.reference.jasperreports-core-renderer.jar}:\
+    ${file.reference.jasperreports-extensions-3.5.3.jar}:\
+    ${file.reference.jasperreports-fonts-5.5.0.jar}:\
+    ${file.reference.jasperreports-fonts-5.6.0.jar}:\
+    ${file.reference.jasperreports-functions-5.5.0.jar}:\
+    ${file.reference.jasperreports-functions-5.6.0.jar}:\
+    ${file.reference.jasperreports-htmlcomponent-4.7.1.jar}:\
+    ${file.reference.jasperreports-htmlcomponent-5.0.1.jar}:\
+    ${file.reference.jasperreports-json.jar}:\
+    ${file.reference.jasperreports-jtidy-r938.jar}:\
+    ${file.reference.javacup.jar}:\
+    ${file.reference.javassist-3.4.GA.jar}:\
+    ${file.reference.jaxen-1.1.1.jar}:\
+    ${file.reference.jcalendar-1.4.jar}:\
+    ${file.reference.jcommon-1.0.15.jar}:\
+    ${file.reference.jcommon-1.0.23.jar}:\
+    ${file.reference.jdt-compiler-3.1.1.jar}:\
+    ${file.reference.jfoenix.jar}:\
+    ${file.reference.jfreechart-1.0.12.jar}:\
+    ${file.reference.jfreechart-1.0.13.jar.zip}:\
+    ${file.reference.jfreechart-1.0.19-experimental.jar}:\
+    ${file.reference.jfreechart-1.0.19-swt.jar}:\
+    ${file.reference.jfreechart-1.0.19.jar}:\
+    ${file.reference.jfreesvg-2.0.jar}:\
+    ${file.reference.jmf.jar}:\
+    ${file.reference.jmrtd.jar}:\
+    ${file.reference.jna-3.5.1.jar}:\
+    ${file.reference.joda-time-2.1.jar}:\
+    ${file.reference.jpa.jar}:\
+    ${file.reference.js-hive-datasource-1.0.4.jar}:\
+    ${file.reference.js-mongodb-datasource-1.0.0a.jar}:\
+    ${file.reference.js_activation-1.1.jar}:\
+    ${file.reference.js_axis-1.4patched.jar}:\
+    ${file.reference.js_commons-codec-1.3.jar}:\
+    ${file.reference.js_commons-discovery-0.2.jar}:\
+    ${file.reference.js_commons-httpclient-3.1.jar}:\
+    ${file.reference.js_jasperserver-common-ws-4.7.1.jar}:\
+    ${file.reference.js_jaxrpc.jar}:\
+    ${file.reference.js_mail-1.4.jar}:\
+    ${file.reference.js_saaj-api-1.3.jar}:\
+    ${file.reference.js_wsdl4j-1.5.1.jar}:\
+    ${file.reference.jta.jar}:\
+    ${file.reference.jxl-2.6.10.jar}:\
+    ${file.reference.libfb303-0.7.0.jar}:\
+    ${file.reference.libthrift-0.9.0-snapshot.jar}:\
+    ${file.reference.log4j-1.2.15.jar}:\
+    ${file.reference.mondrian-3.1.1.12687.jar}:\
+    ${file.reference.mondrian-3.2.0-13661-JS.jar}:\
+    ${file.reference.mongo-java-driver-2.7.3.jar}:\
+    ${file.reference.mysql-connector-java-5.1.13-bin.jar}:\
+    ${file.reference.mysql-connector-java-5.1.23-bin.jar}:\
+    ${file.reference.olap4j-0.9.7.309-JS.jar}:\
+    ${file.reference.org-netbeans-core-windows_ireport.jar}:\
+    ${file.reference.org-netbeans-core_ireport.jar}:\
+    ${file.reference.platform-3.5.1.jar}:\
+    ${file.reference.png-encoder-1.5.jar}:\
+    ${file.reference.poi-3.7-20101029.jar}:\
+    ${file.reference.poi-ooxml-3.7-20101029.jar}:\
+    ${file.reference.poi-ooxml-schemas-3.7-20101029.jar}:\
+    ${file.reference.rex-0.8.1.jar}:\
+    ${file.reference.rex-20080421.jar}:\
+    ${file.reference.rhino-1.7R1.jar}:\
+    ${file.reference.rhino-1.7R3.jar}:\
+    ${file.reference.rs2xml.jar}:\
+    ${file.reference.saaj-api-1.3.jar}:\
+    ${file.reference.serializer.jar}:\
+    ${file.reference.servlet-api-2.4.jar}:\
+    ${file.reference.slf4j-api-1.5.8.jar}:\
+    ${file.reference.slf4j-log4j12-1.5.8.jar}:\
+    ${file.reference.spring-beans-2.5.5.jar}:\
+    ${file.reference.spring-core-2.5.5.jar}:\
+    ${file.reference.spring.jar}:\
+    ${file.reference.sqleonardo-2009.03.rc1.jar}:\
+    ${file.reference.sqljdbc4-2.0.jar}:\
+    ${file.reference.swingx-1.6.2__2_.jar}:\
+    ${file.reference.swingx-1.6.2.jar}:\
+    ${file.reference.swingx-2007_10_07.jar}:\
+    ${file.reference.swingx-all-1.6.4.jar}:\
+    ${file.reference.velocity-1.7-dep.jar}:\
+    ${file.reference.xalan-2.7.1.jar}:\
+    ${file.reference.xbean.jar}:\
+    ${file.reference.xercesImpl-2.7.0.jar}:\
+    ${file.reference.xml-apis-ext.jar}:\
+    ${file.reference.xml-apis.jar}
+# Space-separated list of extra javac options
+javac.compilerargs=
+javac.deprecation=false
+javac.processorpath=\
+    ${javac.classpath}
+javac.source=1.8
+javac.target=1.8
+javac.test.classpath=\
+    ${javac.classpath}:\
+    ${build.classes.dir}
+javac.test.processorpath=\
+    ${javac.test.classpath}
+javadoc.additionalparam=
+javadoc.author=false
+javadoc.encoding=${source.encoding}
+javadoc.noindex=false
+javadoc.nonavbar=false
+javadoc.notree=false
+javadoc.private=false
+javadoc.splitindex=true
+javadoc.use=true
+javadoc.version=false
+javadoc.windowtitle=
+main.class=Vue.SplashScreen
+manifest.file=manifest.mf
+meta.inf.dir=${src.dir}/META-INF
+mkdist.disabled=false
+platform.active=default_platform
+run.classpath=\
+    ${javac.classpath}:\
+    ${build.classes.dir}
+# Space-separated list of JVM arguments used when running the project.
+# You may also define separate properties like run-sys-prop.name=value instead of -Dname=value.
+# To set system properties for unit tests define test-sys-prop.name=value:
+run.jvmargs=
+run.test.classpath=\
+    ${javac.test.classpath}:\
+    ${build.test.classes.dir}
+source.encoding=UTF-8
+src.dir=src
+test.src.dir=test

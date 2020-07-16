@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="Recu" language="groovy" pageWidth="792" pageHeight="612" orientation="Landscape" columnWidth="752" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="ba6a0c73-f2bd-450f-988e-13b3fdaa4493">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<queryString>
+		<![CDATA[SELECT e.idel, e.nomel, e.postnomel, e.prenomel, cl.classe, 
+dp.montant, dp.datepaie, dp.typepaie, dp.iddetail FROM  eleve e INNER JOIN inscrire i ON e.idel = i.eleve INNER JOIN detail d 
+ON i.idinsc = d.inscrit INNER JOIN categorie c ON d.categorie = c.idcat INNER JOIN classe cl ON cl.idclass = c.classe 
+INNER JOIN paiement p ON d.iddet = p.detail INNER JOIN detailpaiement dp ON p.idpaie = dp.paiement ]]>
+	</queryString>
+	<field name="idel" class="java.lang.String"/>
+	<field name="nomel" class="java.lang.String"/>
+	<field name="postnomel" class="java.lang.String"/>
+	<field name="prenomel" class="java.lang.String"/>
+	<field name="classe" class="java.lang.String"/>
+	<field name="montant" class="java.lang.Integer"/>
+	<field name="datepaie" class="java.lang.String"/>
+	<field name="typepaie" class="java.lang.String"/>
+	<field name="iddetail" class="java.lang.String"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="53" splitType="Stretch">
+			<staticText>
+				<reportElement x="239" y="0" width="100" height="20" uuid="33b0db7b-b457-4efb-9675-1e8b7c42bd0f"/>
+				<text><![CDATA[RECU DE PAIEMENT]]></text>
+			</staticText>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="35" splitType="Stretch">
+			<staticText>
+				<reportElement x="239" y="0" width="100" height="20" uuid="29b6adf6-8fc1-431c-a245-4e67b4d5ab3b"/>
+				<text><![CDATA[RECU NUM]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="355" y="0" width="100" height="20" uuid="cc76618b-b836-4146-b970-54811f5cf1cb"/>
+				<textFieldExpression><![CDATA[$F{iddetail}]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band height="20" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="0" width="81" height="20" uuid="03885540-e348-4800-81d8-b39b4e047ce6"/>
+				<text><![CDATA[idel]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="81" y="0" width="100" height="20" uuid="754efd4f-f5a7-4e8b-aa94-bee99d9085d9"/>
+				<text><![CDATA[nomel]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="181" y="0" width="100" height="20" uuid="14eeee48-940a-4994-ba4d-870b2ac18149"/>
+				<text><![CDATA[postnomel]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="281" y="0" width="100" height="20" uuid="f2f8a564-81db-4941-8efa-67fb2f369f2c"/>
+				<text><![CDATA[prenomel]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="381" y="0" width="74" height="20" uuid="cfa043a1-bd54-41c5-97f8-496f96049319"/>
+				<text><![CDATA[classe]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="455" y="0" width="100" height="20" uuid="c7acc103-d16b-4052-a911-611d459aeaea"/>
+				<text><![CDATA[montant]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="555" y="0" width="100" height="20" uuid="1df41d01-7cfd-4eb6-a38b-db141bbdc6fd"/>
+				<text><![CDATA[datepaie]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="655" y="0" width="97" height="20" uuid="f7f28cdb-6a00-47c4-9323-d8b10d69eef1"/>
+				<text><![CDATA[typepaie]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="66" splitType="Stretch">
+			<textField>
+				<reportElement x="0" y="0" width="81" height="20" uuid="28d293a4-3f5b-400a-adab-bfc2e4703689"/>
+				<textFieldExpression><![CDATA[$F{idel}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="81" y="0" width="100" height="20" uuid="57b01b71-a3ac-4061-8a50-3fb735449c6b"/>
+				<textFieldExpression><![CDATA[$F{nomel}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="181" y="0" width="100" height="20" uuid="616a65cd-40de-40e1-a907-9b58e4190ecc"/>
+				<textFieldExpression><![CDATA[$F{postnomel}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="281" y="0" width="100" height="20" uuid="d93ece31-c79f-4914-9847-8d3b1d26943c"/>
+				<textFieldExpression><![CDATA[$F{prenomel}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="381" y="0" width="74" height="20" uuid="1571d605-c555-4aca-9c65-378436c6d398"/>
+				<textFieldExpression><![CDATA[$F{classe}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="455" y="0" width="100" height="20" uuid="7a2ed121-43af-410e-ab2d-ae40875f7f8b"/>
+				<textFieldExpression><![CDATA[$F{montant}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="555" y="0" width="100" height="20" uuid="da8bb174-c4b1-4d9c-8d63-cf87e242b1e1"/>
+				<textFieldExpression><![CDATA[$F{datepaie}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="655" y="0" width="97" height="20" uuid="65267876-26f9-4446-b935-1292041676dc"/>
+				<textFieldExpression><![CDATA[$F{typepaie}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="255" y="35" width="100" height="20" uuid="b821b989-eacd-4c18-8c1b-49c57a47e61e"/>
+				<text><![CDATA[Signature]]></text>
+			</staticText>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="45" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="54" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>

@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="RePaie" language="groovy" pageWidth="792" pageHeight="612" orientation="Landscape" columnWidth="752" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="93204c9e-3e13-4790-bd77-740c21b40146">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<queryString>
+		<![CDATA[SELECT r.nomresp, r.postnomresp, r.tel, r.relation, e.idel, e.nomel, e.postnomel, e.prenomel, e.age, e.genre, e.addresse, cl.classe
+ FROM responsable r INNER JOIN eleve e ON r.idresp = e.resp INNER JOIN inscrire i ON e.idel = i.eleve 
+ INNER JOIN detail d On i.idinsc = d.inscrit INNER JOIN categorie c ON d.categorie = c.idcat 
+ INNER JOIN classe cl ON c.classe = cl.idclass]]>
+	</queryString>
+	<field name="nomresp" class="java.lang.String"/>
+	<field name="postnomresp" class="java.lang.String"/>
+	<field name="tel" class="java.lang.Integer"/>
+	<field name="relation" class="java.lang.String"/>
+	<field name="idel" class="java.lang.String"/>
+	<field name="nomel" class="java.lang.String"/>
+	<field name="postnomel" class="java.lang.String"/>
+	<field name="prenomel" class="java.lang.String"/>
+	<field name="age" class="java.lang.String"/>
+	<field name="genre" class="java.lang.String"/>
+	<field name="addresse" class="java.lang.String"/>
+	<field name="classe" class="java.lang.String"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="79" splitType="Stretch"/>
+	</title>
+	<pageHeader>
+		<band height="35" splitType="Stretch">
+			<staticText>
+				<reportElement x="189" y="2" width="321" height="20" uuid="a9457941-e50d-456c-8bfd-4ff9520db1fa"/>
+				<textElement textAlignment="Center">
+					<font size="16" isBold="true"/>
+				</textElement>
+				<text><![CDATA[LISTE DES ELEVES INSCRIPTS]]></text>
+			</staticText>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band height="61" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="0" width="47" height="20" uuid="882c40bb-049e-4d21-98ba-ae3ad7c02f36"/>
+				<text><![CDATA[idel]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="47" y="0" width="67" height="20" uuid="f00c9511-c2d8-4948-acd4-7cc8a3ccc3cc"/>
+				<text><![CDATA[nomel]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="114" y="0" width="74" height="20" uuid="b5affb53-6b65-4c41-8058-1a293797fc02"/>
+				<text><![CDATA[postnomel]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="188" y="0" width="85" height="20" uuid="ee0cfcbd-933c-44fd-a92f-66f6df764c41"/>
+				<text><![CDATA[prenomel]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="273" y="0" width="44" height="20" uuid="2a42a7fa-4981-4b3a-8145-db886d875dd5"/>
+				<text><![CDATA[age]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="317" y="0" width="43" height="20" uuid="f7610626-95c0-4c51-97dc-803480767a06"/>
+				<text><![CDATA[genre]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="360" y="0" width="44" height="20" uuid="81469ebe-561b-4ad3-8efc-7f7e481fe85a"/>
+				<text><![CDATA[classe]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="404" y="0" width="100" height="20" uuid="7151085b-3dba-40ee-a4e1-da05c0dd823f"/>
+				<text><![CDATA[addresse]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="504" y="0" width="57" height="20" uuid="e4f00bc2-1c20-41c6-a3b5-f4ebc16abbf8"/>
+				<text><![CDATA[nomresp]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="561" y="0" width="64" height="20" uuid="34a135b7-7391-4b9e-8268-bd6d6bb53785"/>
+				<text><![CDATA[postnomresp]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="625" y="0" width="55" height="20" uuid="7fca1312-d0ec-4558-bfeb-157a62ab48d4"/>
+				<text><![CDATA[tel]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="680" y="0" width="72" height="20" uuid="0c387cbf-9881-42a8-993e-1be13ae917c8"/>
+				<text><![CDATA[relation]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="125" splitType="Stretch">
+			<textField>
+				<reportElement x="0" y="0" width="47" height="20" uuid="aa064ac7-baf7-4e3c-bbbb-78d85be635dc"/>
+				<textFieldExpression><![CDATA[$F{idel}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="47" y="0" width="67" height="20" uuid="a0cacb77-0127-4af9-af0b-4646e6b33978"/>
+				<textFieldExpression><![CDATA[$F{nomel}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="114" y="0" width="74" height="20" uuid="92e74c35-b4ac-4976-b6d5-e98bd4f79b55"/>
+				<textFieldExpression><![CDATA[$F{postnomel}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="188" y="0" width="85" height="20" uuid="1deafe7e-3d6d-45b3-8552-6460710820e5"/>
+				<textFieldExpression><![CDATA[$F{prenomel}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="273" y="0" width="44" height="20" uuid="fad0d87c-6e2a-4b20-8b6e-43b67dab9991"/>
+				<textFieldExpression><![CDATA[$F{age}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="317" y="0" width="43" height="20" uuid="f8d56ae6-29e9-4519-a56b-79dee6be78fe"/>
+				<textFieldExpression><![CDATA[$F{genre}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="360" y="0" width="44" height="20" uuid="9c470570-7e7c-40a9-b362-bafd4af4b34d"/>
+				<textFieldExpression><![CDATA[$F{classe}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="404" y="0" width="100" height="20" uuid="b43a86dd-09aa-437f-a8c3-92bb04924fb1"/>
+				<textFieldExpression><![CDATA[$F{addresse}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="504" y="0" width="57" height="20" uuid="1bd365ee-0cf2-496b-9d25-f0bcbccc3d58"/>
+				<textFieldExpression><![CDATA[$F{nomresp}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="561" y="0" width="64" height="20" uuid="cab2719c-01dc-4274-9010-3b3ce813a28e"/>
+				<textFieldExpression><![CDATA[$F{postnomresp}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="625" y="0" width="55" height="20" uuid="f4601079-5976-40b2-94f2-f4383d313e4c"/>
+				<textFieldExpression><![CDATA[$F{tel}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="680" y="0" width="72" height="20" uuid="c3f2f46f-76a2-4a6c-9cb7-7e1174602102"/>
+				<textFieldExpression><![CDATA[$F{relation}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="45" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="54" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>

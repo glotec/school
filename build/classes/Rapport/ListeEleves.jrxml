@@ -1,0 +1,394 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="ListeEleves" language="groovy" pageWidth="792" pageHeight="612" orientation="Landscape" columnWidth="752" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="7d2f4b60-6b72-4b9a-99b0-40027ef08025">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<queryString>
+		<![CDATA[SELECT r.nomresp, r.postnomresp, r.tel, r.relation, e.idel, e.nomel, e.postnomel, e.prenomel, e.age, e.genre, e.addresse, cl.classe
+ FROM responsable r INNER JOIN eleve e ON r.idresp = e.resp INNER JOIN inscrire i ON e.idel = i.eleve 
+ INNER JOIN detail d On i.idinsc = d.inscrit INNER JOIN categorie c ON d.categorie = c.idcat 
+ INNER JOIN classe cl ON c.classe = cl.idclass]]>
+	</queryString>
+	<field name="nomresp" class="java.lang.String"/>
+	<field name="postnomresp" class="java.lang.String"/>
+	<field name="tel" class="java.lang.Integer"/>
+	<field name="relation" class="java.lang.String"/>
+	<field name="idel" class="java.lang.String"/>
+	<field name="nomel" class="java.lang.String"/>
+	<field name="postnomel" class="java.lang.String"/>
+	<field name="prenomel" class="java.lang.String"/>
+	<field name="age" class="java.lang.String"/>
+	<field name="genre" class="java.lang.String"/>
+	<field name="addresse" class="java.lang.String"/>
+	<field name="classe" class="java.lang.String"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="19" splitType="Stretch"/>
+	</title>
+	<pageHeader>
+		<band height="35" splitType="Stretch">
+			<staticText>
+				<reportElement x="268" y="0" width="225" height="20" uuid="02888ea5-3e41-4342-af70-ba6e8b6a8d22"/>
+				<textElement>
+					<font fontName="Nimbus Roman No9 L" size="15"/>
+				</textElement>
+				<text><![CDATA[LISTE DES ELEVES INSCRITS]]></text>
+			</staticText>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band height="20" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="0" width="46" height="20" uuid="f7768925-2ac1-4a0c-ab4f-fe7c9339724d"/>
+				<box>
+					<pen lineWidth="0.5"/>
+					<topPen lineWidth="0.5"/>
+					<leftPen lineWidth="0.5"/>
+					<bottomPen lineWidth="0.5"/>
+					<rightPen lineWidth="0.5" lineStyle="Solid"/>
+				</box>
+				<textElement>
+					<font fontName="Nimbus Roman No9 L"/>
+				</textElement>
+				<text><![CDATA[ID]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="46" y="0" width="73" height="20" uuid="b1022461-9627-46c5-8e31-fe802b824715"/>
+				<box>
+					<pen lineWidth="0.5"/>
+					<topPen lineWidth="0.5"/>
+					<leftPen lineWidth="0.5"/>
+					<bottomPen lineWidth="0.5"/>
+					<rightPen lineWidth="0.5" lineStyle="Solid"/>
+				</box>
+				<textElement>
+					<font fontName="Nimbus Roman No9 L"/>
+				</textElement>
+				<text><![CDATA[NOM]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="119" y="0" width="60" height="20" uuid="44260f6a-cfba-44d1-a3e2-e978f485576a"/>
+				<box>
+					<pen lineWidth="0.5"/>
+					<topPen lineWidth="0.5"/>
+					<leftPen lineWidth="0.5"/>
+					<bottomPen lineWidth="0.5"/>
+					<rightPen lineWidth="0.5" lineStyle="Solid"/>
+				</box>
+				<textElement>
+					<font fontName="Nimbus Roman No9 L"/>
+				</textElement>
+				<text><![CDATA[POST NOM]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="179" y="0" width="62" height="20" uuid="77f5eb86-0607-45fa-8190-47339cb90e34"/>
+				<box>
+					<pen lineWidth="0.5"/>
+					<topPen lineWidth="0.5"/>
+					<leftPen lineWidth="0.5"/>
+					<bottomPen lineWidth="0.5"/>
+					<rightPen lineWidth="0.5" lineStyle="Solid"/>
+				</box>
+				<textElement>
+					<font fontName="Nimbus Roman No9 L"/>
+				</textElement>
+				<text><![CDATA[PRENOM]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="241" y="0" width="51" height="20" uuid="86725281-9768-4c8d-a1dd-8bb139d7f2ce"/>
+				<box>
+					<pen lineWidth="0.5"/>
+					<topPen lineWidth="0.5"/>
+					<leftPen lineWidth="0.5"/>
+					<bottomPen lineWidth="0.5"/>
+					<rightPen lineWidth="0.5" lineStyle="Solid"/>
+				</box>
+				<textElement>
+					<font fontName="Nimbus Roman No9 L"/>
+				</textElement>
+				<text><![CDATA[AGE]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="292" y="0" width="46" height="20" uuid="b45204d2-bac1-4cba-a54d-1d27c35f45df"/>
+				<box>
+					<pen lineWidth="0.5"/>
+					<topPen lineWidth="0.5"/>
+					<leftPen lineWidth="0.5"/>
+					<bottomPen lineWidth="0.5"/>
+					<rightPen lineWidth="0.5" lineStyle="Solid"/>
+				</box>
+				<textElement>
+					<font fontName="Nimbus Roman No9 L"/>
+				</textElement>
+				<text><![CDATA[GENRE]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="338" y="0" width="121" height="20" uuid="a05d84ab-375b-469e-8c05-2e997b40c4ab"/>
+				<box>
+					<pen lineWidth="0.5"/>
+					<topPen lineWidth="0.5"/>
+					<leftPen lineWidth="0.5"/>
+					<bottomPen lineWidth="0.5"/>
+					<rightPen lineWidth="0.5" lineStyle="Solid"/>
+				</box>
+				<textElement>
+					<font fontName="Nimbus Roman No9 L"/>
+				</textElement>
+				<text><![CDATA[ADDRESSE]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="459" y="0" width="45" height="20" uuid="2c6958bf-8dcf-4212-a332-6c50d15ec05c"/>
+				<box>
+					<pen lineWidth="0.5"/>
+					<topPen lineWidth="0.5"/>
+					<leftPen lineWidth="0.5"/>
+					<bottomPen lineWidth="0.5"/>
+					<rightPen lineWidth="0.5" lineStyle="Solid"/>
+				</box>
+				<textElement>
+					<font fontName="Nimbus Roman No9 L"/>
+				</textElement>
+				<text><![CDATA[CLASSE]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="504" y="0" width="59" height="20" uuid="d3d670a4-144e-497e-9def-15a94078d9a3"/>
+				<box>
+					<pen lineWidth="0.5"/>
+					<topPen lineWidth="0.5"/>
+					<leftPen lineWidth="0.5"/>
+					<bottomPen lineWidth="0.5"/>
+					<rightPen lineWidth="0.5" lineStyle="Solid"/>
+				</box>
+				<textElement>
+					<font fontName="Nimbus Roman No9 L"/>
+				</textElement>
+				<text><![CDATA[NOM RESP]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="563" y="0" width="63" height="20" uuid="32c16c80-2124-458f-9127-ce2965128368"/>
+				<box>
+					<pen lineWidth="0.5"/>
+					<topPen lineWidth="0.5"/>
+					<leftPen lineWidth="0.5"/>
+					<bottomPen lineWidth="0.5"/>
+					<rightPen lineWidth="0.5" lineStyle="Solid"/>
+				</box>
+				<textElement>
+					<font fontName="Nimbus Roman No9 L"/>
+				</textElement>
+				<text><![CDATA[POST NOM]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="626" y="0" width="80" height="20" uuid="e8a511a1-2eda-4f8e-b073-0d9007093743"/>
+				<box>
+					<pen lineWidth="0.5"/>
+					<topPen lineWidth="0.5"/>
+					<leftPen lineWidth="0.5"/>
+					<bottomPen lineWidth="0.5"/>
+					<rightPen lineWidth="0.5" lineStyle="Solid"/>
+				</box>
+				<textElement>
+					<font fontName="Nimbus Roman No9 L"/>
+				</textElement>
+				<text><![CDATA[TELEPHONE]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="706" y="0" width="46" height="20" uuid="9c15afdc-3805-428a-bf6f-a4af8abde804"/>
+				<box>
+					<pen lineWidth="0.5"/>
+					<topPen lineWidth="0.5"/>
+					<leftPen lineWidth="0.5"/>
+					<bottomPen lineWidth="0.5"/>
+					<rightPen lineWidth="0.5" lineStyle="Solid"/>
+				</box>
+				<textElement>
+					<font fontName="Nimbus Roman No9 L"/>
+				</textElement>
+				<text><![CDATA[RELATION]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="20" splitType="Stretch">
+			<textField>
+				<reportElement x="0" y="0" width="46" height="20" uuid="e22118b0-fdf4-4b70-9310-fa41574eba72"/>
+				<box>
+					<pen lineWidth="0.5"/>
+					<topPen lineWidth="0.5"/>
+					<leftPen lineWidth="0.5"/>
+					<bottomPen lineWidth="0.5"/>
+					<rightPen lineWidth="0.5" lineStyle="Solid"/>
+				</box>
+				<textElement>
+					<font fontName="Nimbus Roman No9 L"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{idel}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="46" y="0" width="73" height="20" uuid="ceb0cde7-4124-42d1-92f9-7195ac61689a"/>
+				<box>
+					<pen lineWidth="0.5"/>
+					<topPen lineWidth="0.5"/>
+					<leftPen lineWidth="0.5"/>
+					<bottomPen lineWidth="0.5"/>
+					<rightPen lineWidth="0.5" lineStyle="Solid"/>
+				</box>
+				<textElement>
+					<font fontName="Nimbus Roman No9 L"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{nomel}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="119" y="0" width="60" height="20" uuid="74a4f47b-7979-446d-8229-bad5c6d148c7"/>
+				<box>
+					<pen lineWidth="0.5"/>
+					<topPen lineWidth="0.5"/>
+					<leftPen lineWidth="0.5"/>
+					<bottomPen lineWidth="0.5"/>
+					<rightPen lineWidth="0.5" lineStyle="Solid"/>
+				</box>
+				<textElement>
+					<font fontName="Nimbus Roman No9 L"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{postnomel}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="179" y="0" width="62" height="20" uuid="0ff57d78-dcc5-418a-809f-a5c64c6ef316"/>
+				<box>
+					<pen lineWidth="0.5"/>
+					<topPen lineWidth="0.5"/>
+					<leftPen lineWidth="0.5"/>
+					<bottomPen lineWidth="0.5"/>
+					<rightPen lineWidth="0.5" lineStyle="Solid"/>
+				</box>
+				<textElement>
+					<font fontName="Nimbus Roman No9 L"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{prenomel}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="241" y="0" width="51" height="20" uuid="111ceb21-b54a-48b1-a59b-3c671930c822"/>
+				<box>
+					<pen lineWidth="0.5"/>
+					<topPen lineWidth="0.5"/>
+					<leftPen lineWidth="0.5"/>
+					<bottomPen lineWidth="0.5"/>
+					<rightPen lineWidth="0.5" lineStyle="Solid"/>
+				</box>
+				<textElement>
+					<font fontName="Nimbus Roman No9 L"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{age}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="292" y="0" width="46" height="20" uuid="b49a51ec-91ec-4778-9ce7-53d73a545ff3"/>
+				<box>
+					<pen lineWidth="0.5"/>
+					<topPen lineWidth="0.5"/>
+					<leftPen lineWidth="0.5"/>
+					<bottomPen lineWidth="0.5"/>
+					<rightPen lineWidth="0.5" lineStyle="Solid"/>
+				</box>
+				<textElement>
+					<font fontName="Nimbus Roman No9 L"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{genre}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="338" y="0" width="121" height="20" uuid="3ac94085-ac67-4b1c-8554-16ae3787dcef"/>
+				<box>
+					<pen lineWidth="0.5"/>
+					<topPen lineWidth="0.5"/>
+					<leftPen lineWidth="0.5"/>
+					<bottomPen lineWidth="0.5"/>
+					<rightPen lineWidth="0.5" lineStyle="Solid"/>
+				</box>
+				<textElement>
+					<font fontName="Nimbus Roman No9 L"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{addresse}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="459" y="0" width="45" height="20" uuid="4ab84154-4019-421c-bb01-a9457ca25f67"/>
+				<box>
+					<pen lineWidth="0.5"/>
+					<topPen lineWidth="0.5"/>
+					<leftPen lineWidth="0.5"/>
+					<bottomPen lineWidth="0.5"/>
+					<rightPen lineWidth="0.5" lineStyle="Solid"/>
+				</box>
+				<textElement>
+					<font fontName="Nimbus Roman No9 L"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{classe}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="504" y="0" width="59" height="20" uuid="d997bf38-b687-4418-a60e-a110bf53c447"/>
+				<box>
+					<pen lineWidth="0.5"/>
+					<topPen lineWidth="0.5"/>
+					<leftPen lineWidth="0.5"/>
+					<bottomPen lineWidth="0.5"/>
+					<rightPen lineWidth="0.5" lineStyle="Solid"/>
+				</box>
+				<textElement>
+					<font fontName="Nimbus Roman No9 L"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{nomresp}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="563" y="0" width="63" height="20" uuid="3d7b2ce9-7097-4006-a560-1181f30b3c93"/>
+				<box>
+					<pen lineWidth="0.5"/>
+					<topPen lineWidth="0.5"/>
+					<leftPen lineWidth="0.5"/>
+					<bottomPen lineWidth="0.5"/>
+					<rightPen lineWidth="0.5" lineStyle="Solid"/>
+				</box>
+				<textElement>
+					<font fontName="Nimbus Roman No9 L"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{postnomresp}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="626" y="0" width="80" height="20" uuid="e5704196-7a91-4ad9-88c2-e5bd8038ed74"/>
+				<box>
+					<pen lineWidth="0.5"/>
+					<topPen lineWidth="0.5"/>
+					<leftPen lineWidth="0.5"/>
+					<bottomPen lineWidth="0.5"/>
+					<rightPen lineWidth="0.5" lineStyle="Solid"/>
+				</box>
+				<textElement>
+					<font fontName="Nimbus Roman No9 L"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{tel}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="706" y="0" width="46" height="20" uuid="097dd874-fae7-4acf-a7bf-504cd2bd043b"/>
+				<box>
+					<pen lineWidth="0.5"/>
+					<topPen lineWidth="0.5"/>
+					<leftPen lineWidth="0.5"/>
+					<bottomPen lineWidth="0.5"/>
+					<rightPen lineWidth="0.5" lineStyle="Solid"/>
+				</box>
+				<textElement>
+					<font fontName="Nimbus Roman No9 L"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{relation}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="54" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>
